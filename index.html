@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Restaurant Website</title>
+</head>
+<style>
+    #food
+    {
+        margin-top: 20px;
+    }
+    .figure
+    {
+        margin-right: 10px;
+    }
+</style>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Home Page</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                 
+                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div id="food" >
+        <figure class="figure">
+            <a href="form.html"> <img src="Naan Bread.jpeg" class="figure-img img-fluid rounded-circle" alt="..."></a>
+            <figcaption class="figure-caption"><a href="form.html">Naan Bread Rs.25</a></figcaption>
+          </figure>
+          <figure class="figure">
+           <a href="form.html"> <img src="Tandori Bread.jpeg" class="figure-img img-fluid rounded-circle" alt="..."  ></a>
+            <figcaption class="figure-caption"><a href="form.html">Tandori Bread Rs.20</a></figcaption>
+          </figure>
+          <figure class="figure">
+           <a href="form.html"> <img src="Aachhar.jpeg" class="figure-img img-fluid rounded-circle" alt="..."  ></a>
+            <figcaption class="figure-caption"><a href="form.html">Aachhar Rs.30</a></figcaption>
+          </figure>
+          <figure class="figure">
+            <a href="form.html"> <img src="Daal.jpeg" class="figure-img img-fluid rounded-circle" alt="..."  ></a>
+             <figcaption class="figure-caption"><a href="form.html">Daal Rs.150</a></figcaption>
+           </figure>
+           <figure class="figure">
+            <a href="form.html"> <img src="Kofta.jpeg" class="figure-img img-fluid rounded-circle" alt="..."  ></a>
+             <figcaption class="figure-caption"><a href="form.html">Kofta Rs.280</a></figcaption>
+           </figure>
+           <figure class="figure">
+            <a href="form.html"> <img src="Paneer Tikka.jpeg" class="figure-img img-fluid rounded-circle" alt="..."  ></a>
+             <figcaption class="figure-caption"><a href="form.html">Paneer Tikka Masala Rs.350</a></figcaption>
+           </figure>
+           <figure class="figure">
+            <a href="form.html"> <img src="Onion.jpeg" class="figure-img img-fluid rounded-circle" alt="..."  ></a>
+             <figcaption class="figure-caption"><a href="form.html">Onion Rs.250</a></figcaption>
+           </figure>
+           <figure class="figure">
+            <a href="form.html"> <img src="Veg Mix.jpeg" class="figure-img img-fluid rounded-circle" alt="..."  ></a>
+             <figcaption class="figure-caption"><a href="form.html">Veg Mix Rs.220</a></figcaption>
+           </figure>
+           <figure class="figure">
+            <a href="form.html"> <img src="Rice.jpeg" class="figure-img img-fluid rounded-circle" alt="..."  ></a>
+             <figcaption class="figure-caption"><a href="form.html">Rice Rs.180</a></figcaption>
+           </figure>
+           <figure class="figure">
+            <a href="form.html"> <img src="Masala Papad.jpeg" class="figure-img img-fluid rounded-circle" alt="..."  ></a>
+             <figcaption class="figure-caption"><a href="form.html">Masala Papad Rs.70</a></figcaption>
+           </figure>
+
+    </div>
+    <div>
+      <h1 style="text-align: center;">Contact Us</h1>
+      <div class="mb-3" id="contact">
+
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <label for="exampleFormControlInput1" class="form-label">Name</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+        <label for="exampleFormControlInput1" class="form-label">ContactNumber</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Contact Number">
+
+            <button type="button"  id="done" sclass="btn btn-outline-primary"  onclick="myFun()">Submit</button>
+            
+          </div>
+    </div>
+</body>
+<script>
+   
+  function myFun() {
+ document.getElementById("done").addEventListener("click",showmsg);
+
+}
+function showmsg() {
+
+ location.reload(true);
+ window.alert("Thanks for contacting us. will reach you shortly");
+}
+
+</script>
+</html>
